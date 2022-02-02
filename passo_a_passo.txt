@@ -1,0 +1,107 @@
+Seguindo as orientações do site:
+
+	https://stackabuse.com/guide-to-handlebars-templating-engine-for-node/
+
+Criada a pasta vazia:
+	D:\projetos\node\stackabuse
+
+Aberto o prompt de comando dentro da pasta e digitado o comando:
+	#### `npm init -y` 
+
+Com isto foi gerado o arquivo 'package.json' dentro contendo as informações do projeto.
+Por enquanto apenas isto:
+<pre>
+{
+  "name": "stackabuse",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+</pre>
+
+
+
+
+Instalando as bibliotecas express e express-handlebars
+
+#### `npm install --save express express-handlebars`
+
+Criando os arquivos e pastas como indicado no artigo
+.
+├── app.js
+└── views
+    ├── home.hbs
+    └── layouts
+        └── main.hbs
+
+
+
+
+
+*************************
+
+
+windows power shell 
+choco -v
+
+0.10.15
+
+Portanto esta instalado 
+
+
+
+
+https://viniciusveigadev.medium.com/como-substituir-ou-voltar-para-uma-vers%C3%A3o-do-node-js-f2aa40591036
+
+
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+
+<h1>Hello World from Handlebars</h1>
+
+
+O que deu certo, foi esta informação:
+<pre>
+const express = require('express');
+const { engine } = require ('express-handlebars');
+
+const app = express();
+
+app.engine('handlebars', engine());
+app.set('view engine', 'handlebars');
+app.set("views", "./views");
+
+app.get('/', (req, res) => {
+    res.render('main');
+});
+
+app.listen(3000);
+
+</pre>
+
+vinda deste site:
+
+	https://stackoverflow.com/questions/69962757/typeerror-handlebars-is-not-a-function
+
+
+Até a parte onde o 'post' só tem um item de cada,  funciona, quando o post tem mais de um item  começa a apresentar erro.
+
+Como esta parte era para fazer adicionar o estilo, até aqui esta bom e Funcionado.
+
+Retornar depois para adicionar mais itens e fazer ele funcionar com mais itens
+
+
+
+
+
+
+
+
+
