@@ -39,11 +39,16 @@ Instalando as bibliotecas express e express-handlebars
 
 Criando os arquivos e pastas como indicado no artigo
 .
+
 ├── app.js
+
 └── views
-    ├── home.hbs
-    └── layouts
-        └── main.hbs
+
+	├── home.handlebars
+	
+    	└── layouts
+        	
+		└── main.handlebars
        
        
  Seguindo as orientações do site,  apresenta erro  com o código:  
